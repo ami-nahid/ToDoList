@@ -19,15 +19,15 @@ struct NewToDoView: View {
                 .cornerRadius (15)
                 .padding()
             
-            Toggle(isOn: Is On) {
-                Text("Is it important?")
-            }
-    
-            //save button
-            Button {
-
-            } label: {
+            Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
+                Text ("Is it important?")
+          
+                //save button
+                Button {
+                    
+                } label: {
                     Text("Save")
+                }
             }
         }
         .padding ()
