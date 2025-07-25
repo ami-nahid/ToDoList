@@ -22,7 +22,9 @@ struct ContentView: View {
                 
                 //plus button
                 Button {
-                    showNewTask = true
+                    withAnimation {
+                        showNewTask = true
+                    }
                 } label: {
                     Text ("+")
                         .font(.title)
