@@ -6,16 +6,29 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            HStack{
+                //title
+                Text ("To-Do List")
+                    .font(.headline)
+                Spacer ()
+                
+                //plus button
+                Button {
+        
+                } label: {
+                    Text ("+")
+                        .font(.title)
+                        .fontWeight(.bold)
+                }
+            }
+            .padding()
+            Spacer ()
         }
-        .padding()
     }
 }
 
